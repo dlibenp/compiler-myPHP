@@ -1,0 +1,26 @@
+
+<Proyecto> --> <html><title>id</title><body><code_php></body></html>
+<code_php> --> <apertura> <var> <instruction_list> <cierre>
+<apertura> --> <? | <?php | <script language="php">
+<cierre> --> ?> | </script>
+<var> --> <variable> <declarations>
+<variable> --> id
+<declaraciones> --> [<declaration> <declaraciones>]
+<declaration> --> <variables>:<type>;
+<type> --> color | href
+<variables> --> id <others_variables>
+<others_variables> --> [, <variables>]
+<instruction_list> --> [<single_instruction> <instruction_list>]
+<single_instruction> --> <asignacion> | <suma> | <resta> | <multiplicacion> | <division> | <concatenacion>
+
+<asignacion> --> id = <expression>;
+<expression> --> <term> <others_terms>
+<others_terms> --> [<operators_level_1> <term> <others_terms>]
+<operators_level_1> --> + | - | "||"
+<term> --> <factor> <others_factors>
+<others_factors> --> [<operators_level_2> <factor> <others_factors>]
+<operators_level_2> --> * | / | % | &&
+<factor> --> <color_literal> | <href_literal> | id | ! <factor> | <sign> <factor> | <exprecion>
+<color_literal> --> exadecimal
+<href_literal> --> string
+<sign> --> + | -

@@ -1,0 +1,17 @@
+<html>
+    <title>myphp</title>
+    <body>
+        <?php
+            <var>
+                a,b:color;
+                c,d:href;
+            <cod>
+                a=#00ff55;
+                c="www.myphp.com";
+                b=a+a;
+                d=c+c;
+                write b
+                write d
+        ?>
+    </body>
+</html>
